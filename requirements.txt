@@ -1,0 +1,36 @@
+# Core ML & Embeddings
+sentence-transformers          # from sentence_transformers import SentenceTransformer
+numpy                          # import numpy as np
+
+# Vector Search & Database
+faiss-cpu                      # import faiss
+qdrant-client                  # from qdrant_client import QdrantClient
+                              # from qdrant_client.models import Distance, VectorParams
+
+# LangChain Framework
+langchain-community            # from langchain_community.document_loaders import PyPDFLoader
+langchain-text-splitters       # from langchain_text_splitters import RecursiveCharacterTextSplitter
+langchain-huggingface          # from langchain_huggingface import HuggingFaceEmbeddings
+langchain-qdrant               # from langchain_qdrant import QdrantVectorStore
+langchain-core                 # from langchain_core.documents import Document
+
+# Local LLM
+ollama                         # import ollama
+
+# PDF Processing (Typed PDFs)
+pypdf                          # Used by PyPDFLoader
+
+# OCR & Image Processing (Handwritten PDFs)
+PyMuPDF                        # import fitz (PDF to image, no poppler needed)
+pytesseract                    # import pytesseract
+opencv-python                  # import cv2
+pillow                         # from PIL import Image
+
+# Note: Tesseract OCR must be installed separately (not a Python package)
+# Windows: https://github.com/UB-Mannheim/tesseract/wiki
+# Linux: sudo apt-get install tesseract-ocr
+# Mac: brew install tesseract
+
+# Note: Ollama must be installed separately
+# Download from: https://ollama.ai
+# Then run: ollama pull phi3
